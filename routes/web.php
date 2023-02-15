@@ -15,4 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('index');
-});
+})->name('index');
+
+Route::get('/uno', function () {
+    $data = 'Pagina-1';
+    return view('uno', compact('data'));
+})->name('uno');
+
+Route::get('/due', function () {
+    $data = 'Pagina-2';
+    return view('due', compact('data'));
+})->name('due');

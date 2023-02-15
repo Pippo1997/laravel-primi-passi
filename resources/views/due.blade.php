@@ -6,8 +6,9 @@
         <title>Laravel</title>
     </head>
     <body>
-        <h1>Hello World</h1>
-        <a href="{{route('uno')}}">Pagina 1</a>
-        <a href="{{route('due')}}">Pagina 2</a>
+        <h1>
+            {{$data}}
+        </h1>
+        <a href="{{route('index')}}">index</a>
     </body>
 </html>
